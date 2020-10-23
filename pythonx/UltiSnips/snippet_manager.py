@@ -831,7 +831,7 @@ class SnippetManager:
         potentials = set()
 
         all_snippet_directories = find_all_snippet_directories()
-        if len(all_snippet_directories) == 1:
+        if len(all_snippet_directories) >= 1:
             # Most likely the user has set g:UltiSnipsSnippetDirectories to a
             # single absolute path.
             potentials.update(
